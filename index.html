@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LogoD</title>
-    <meta name="description" content="LogoD provides high-quality custom logo design for your business. Unique logos, fast delivery, and affordable pricing. Order your professional logo today.">
-    <meta name="keywords" content="Logo design, custom logo, professional logo, order logo online, business branding, LogoD, logo designer, creative logo, unique logo design, Fiverr logo, brand identity">
-    <meta name="author" content="Sergey Svyatodukh">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://logod.pp.ua/">
-    <meta property="og:title" content="LogoD - Professional Logo Design Service">
-    <meta property="og:description" content="Order unique and professional logos for your business. Fast delivery, vector files, and affordable pricing.">
-    <meta property="og:image" content="https://logod.pp.ua/logod.png">
-    <meta property="og:url" content="https://logod.pp.ua">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LogoD - Professional Logo Design Service">
-    <meta name="twitter:description" content="Order unique and professional logos for your business. Fast delivery, vector files, and affordable pricing.">
-    <meta name="twitter:image" content="https://logod.pp.ua/logod.png">
-    <link rel="icon" href="https://logod.pp.ua/logod.png" type="image/png">
-    <link rel="apple-touch-icon" href="https://logod.pp.ua/logod.png">
-    <link rel="manifest" href="manifest.json">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "LogoD",
-  "url": "https://logod.pp.ua",
-  "logo": "https://logod.pp.ua/logod.png",
-  "description": "LogoD is a professional logo design service providing custom logos for brands, businesses, and individuals.",
-  "founder": {
-    "@type": "Person",
-    "name": "Sergey Svyatodukh"
-  },
-  "sameAs": [
-    "https://www.fiverr.com/sergey_svatodyx",
-    "https://logod.pp.ua"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "example@email.com",
-    "contactType": "Customer Support"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LogoD – Custom Logo Design Services</title>
+  <meta name="description" content="LogoD offers high-quality, affordable, and fast logo design for businesses. Get your unique brand identity today!">
+  <meta name="keywords" content="custom logo, logo design, branding, business logo, professional logos">
+  <meta name="author" content="Sergey Svyatodukh">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://logod.pp.ua/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="LogoD – Custom Logo Design Services">
+  <meta property="og:description" content="LogoD creates stunning custom logos for your business. Affordable prices and fast delivery.">
+  <meta property="og:image" content="https://logod.pp.ua/logod.webp">
+  <meta property="og:url" content="https://logod.pp.ua/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LogoD – Custom Logo Design Services">
+  <meta name="twitter:description" content="LogoD creates stunning custom logos for your business. Affordable prices and fast delivery.">
+  <meta name="twitter:image" content="https://logod.pp.ua/logod.webp">
+  <meta name="twitter:site" content="@LogoD">
+  <meta name="twitter:creator" content="@LogoD">
+
+  <!-- Favicon and Icons -->
+  <link rel="icon" href="/logod.webp" type="image/webp">
+  <link rel="apple-touch-icon" href="/logod.webp">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Security Headers via meta (note: better in server config) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+
+  <!-- Preload Fonts or Images -->
+  <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LogoD",
+    "url": "https://logod.pp.ua",
+    "logo": "https://logod.pp.ua/logod.webp",
+    "sameAs": [
+      "https://www.fiverr.com/sergey_svatodyx",
+      "https://www.instagram.com/logod_official"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "example@email.com"
+    }
   }
-}
-</script>
+  </script>
+
+  <!-- CSS Frameworks -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Lazyload & Responsive Images example (in body) -->
+  <style>
+    img[loading="lazy"] { display: block; max-width: 100%; height: auto; }
+  </style>
 </head>
 <body class="bg-gray-100 font-sans">
     <header class="bg-green-600 text-white py-6 sticky top-0 z-50 shadow-lg">
