@@ -1,0 +1,22 @@
+{
+  "name": "LogoD",
+  "short_name": "LogoD",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e1e1e",
+  "icons": [
+    {
+      "src": "logod192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logod.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "lang": "uk",
+  "orientation": "portrait"
+}

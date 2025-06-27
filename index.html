@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogoD</title>
+    <link rel="icon" href="logod.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-green-600 text-white py-6 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="https://logod.pp.ua/" class="text-3xl font-bold"><h1>LogoD</h1></a>
+            <nav>
+                <a href="#pricing" class="mx-4 hover:text-green-200">Tariffs</a> 
+                <a href="#portfolio" class="mx-4 hover:text-green-200">Logo examples</a> 
+                <button onclick="openModal()" class="mx-4 hover:text-green-200">Order</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-green-500 to-blue-500 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+           <h2 class="text-5xl font-bold mb-4">Unique logos for your business</h2>
+           <p class="text-xl mb-8">I create professional logos that will make your brand stand out!</p>
+           <button onclick="openModal()" class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-100">Order now</button>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Tariffs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">Basic</h3>
+                    <p class="text-3xl font-bold mb-4">€8.98 (3 days, +€4.49 for 1 day)</p>
+                    <ul class="text-left mb-6">
+                        <li class="mb-2">Logo transparency</li>
+                        <li class="mb-2">Vector file</li>
+                        <li class="mb-2">Source file</li>
+                        <li class="mb-2">Revisions: 1</li>
+                        <li class="mb-2">Format: JPG, PNG, PSD, SVG</li>
+                    </ul>
+                    <button onclick="openModal()" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700">Choose</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">Standart</h3>
+                    <p class="text-3xl font-bold mb-4">€22.46 (7 days, +€8.98 for 5 days)</p>
+                    <ul class="text-left mb-6">
+                        <li class="mb-2">Logo transparency</li>
+                        <li class="mb-2">Vector file</li>
+                        <li class="mb-2">Printable file</li>
+                        <li class="mb-2">Source file</li>
+                        <li class="mb-2">Revisions: 3</li>
+                        <li class="mb-2">Format: JPG, PNG, PSD, SVG</li>
+                    </ul>
+                    <button onclick="openModal()" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700">Choose</button>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-semibold mb-4">Premium</h3>
+                    <p class="text-3xl font-bold mb-4">€35.93 (14 days, +€13.47 for 7 days)</p>
+                    <ul class="text-left mb-6">
+                        <li class="mb-2">Logo transparency</li>
+                        <li class="mb-2">Vector file</li>
+                        <li class="mb-2">Printable file</li>
+                        <li class="mb-2">Source file</li>
+                        <li class="mb-2">Stationery designs</li>
+                        <li class="mb-2">Social media kit</li>
+                        <li class="mb-2">Revisions: 5</li>
+                        <li class="mb-2">Format: JPG, PNG, PSD, SVG</li>
+                    </ul>
+                    <button onclick="openModal()" class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700">Choose</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-16 bg-gray-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12">Logo examples</h2>
+            <div class="relative">
+                <div class="flex overflow-x-auto space-x-4 pb-4" id="logoCarousel">
+                    <div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo1.png" alt="Logo 1" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo2.png" alt="Logo 2" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo3.png" alt="Logo 3" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo4.png" alt="Logo 4" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo5.png" alt="Logo 5" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo5.png" alt="Logo 6" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo7.png" alt="Logo 7" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo8.png" alt="Logo 8" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo9.png" alt="Logo 9" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo10.png" alt="Logo 10" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo11.png" alt="Logo 11" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo12.png" alt="Logo 12" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo13.png" alt="Logo 13" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo14.png" alt="Logo 14" class="w-full">
+</div>
+<div class="min-w-[200px] bg-white p-4 rounded-lg shadow-lg">
+  <img src="logo/logo15.png" alt="Logo 15" class="w-full">
+</div>
+                </div>
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-green-600 text-white p-2 rounded-full" onclick="scrollCarousel(-200)">◄</button>
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-green-600 text-white p-2 rounded-full" onclick="scrollCarousel(200)">►</button>
+                </div>
+        </div>
+    </section>
+
+    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full relative">
+            <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800">✕</button> 
+            <h3 class="text-2xl font-bold mb-4">Contact details</h3> 
+            <p class="mb-2"><strong>Name:</strong>Sergey Svyatodukh</p> 
+            <p class="mb-2"><strong>Email:</strong> fiverr.sergey.svatodyx@gmail.com</p> 
+            <p class="mb-2"><strong>Phone:</strong> +380 96 187 39 69</p> 
+            <p class="mb-2"><strong>Telegram:</strong> @lemonade0408</p> 
+            <p class="mb-2"><strong>Fiverr:</strong> <a href="https://www.fiverr.com/sergey_svatodyx/high-quality-banner-cover-and-social-media-visuals?context_referrer=seller_page&ref_ctx_id=37045e7994554e10b79b15479a1245f9&pckg_id=1&pos=1&imp_id=c997d5ee-e8d9-41c1-a457-d1099e3239fd" target="_blank" class="text-green-600 hover:underline">LogoD</a></p>
+            <p class="mt-4">Contact me to discuss your project!</p>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 LogoD. All rights reserved. Created by QQ-my</p>
+        </div>
+    </footer>
+
+    <script>
+        gsap.from("header", { y: -100, opacity: 0, duration: 1, ease: "power2.out" });
+        gsap.from("#pricing .bg-white", { 
+            y: 100, 
+            opacity: 0, 
+            duration: 1, 
+            stagger: 0.2, 
+            scrollTrigger: { trigger: "#pricing", start: "top 80%" } 
+        });
+        gsap.from("#portfolio .min-w-[200px]", { 
+            scale: 0.8, 
+            opacity: 0, 
+            duration: 0.5, 
+            stagger: 0.1, 
+            scrollTrigger: { trigger: "#portfolio", start: "top 80%" } 
+        });
+
+        function openModal() {
+            const modal = document.getElementById("contactModal");
+            modal.classList.remove("hidden");
+            gsap.fromTo(modal.querySelector(".bg-white"), 
+                { scale: 0.7, opacity: 0 }, 
+                { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }
+            );
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("contactModal");
+            gsap.to(modal.querySelector(".bg-white"), {
+                scale: 0.7,
+                opacity: 0,
+                duration: 0.3,
+                ease: "back.in(1.7)",
+                onComplete: () => modal.classList.add("hidden")
+            });
+        }
+
+        function scrollCarousel(amount) {
+            const carousel = document.getElementById("logoCarousel");
+            carousel.scrollBy({ left: amount, behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>
