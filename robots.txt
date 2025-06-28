@@ -1,4 +1,4 @@
 User-agent: *
+Disallow: /logod.png
 Allow: /
 Sitemap: https://logod.pp.ua/sitemap.xml
-
